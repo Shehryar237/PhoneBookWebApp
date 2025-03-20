@@ -1,0 +1,26 @@
+# Ignore all node_modules folders
+node_modules/
+
+# Ignore .env file in the backend
+backend/.env
+
+# Ignore Playwright test artifacts
+playwright/.cache/
+playwright/test-results/
+playwright/playwright-report/
+playwright/playwright/.cache/
+
+# General ignores for Node.js projects
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.DS_Store
+dist/
+build/
+*.log
+.idea/
+.vscode/
+*.tmp
+*.bak

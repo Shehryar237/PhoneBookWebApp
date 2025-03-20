@@ -1,0 +1,75 @@
+# Test: Get all contacts
+GET http://localhost:3001/api/persons
+Content-Type: application/json
+
+###
+
+# Test: Get contact by ID
+GET http://localhost:3001/api/persons/60b8d8d8b8d8b8b8b8b8b8b8
+Content-Type: application/json
+
+###
+
+# Test: Add a new contact (POST)
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Hello",
+    "number": "1234567890"
+}
+
+###
+
+# Test: Update a contact (PUT)
+PUT http://localhost:3001/api/persons/674b53c2ac65268d80c2c738
+Content-Type: application/json
+
+{
+    "name": "Hello",
+    "number": "0987654321"
+}
+
+###
+
+# Test: Delete a contact (DELETE)
+DELETE http://localhost:3001/api/persons/60b8d8d8b8d8b8b8b8b8b8b8
+Content-Type: application/json
+
+###
+
+# Test: Get information (info)
+GET http://localhost:3001/info
+Content-Type: application/json
+
+###
+
+# Test: Get information (info)
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username": "root222",
+    "name": "Superuser222",
+    "password": "salainenz22"
+}
+###
+
+# Test: login
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "username": "mluukkai",
+  "password": "salainen"
+}
+###
+
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "username": "444",
+  "name": "Superuser4",
+  "password": "444"
+}

@@ -1,0 +1,14 @@
+const Contact = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between grid items */
+    padding: 10px;
+    width: 100%;
+    border: 2px solid black;
+    .name{
+        font-weight: bold;
+    }
+    .options{
+        gap: 10px;
+    }
+  

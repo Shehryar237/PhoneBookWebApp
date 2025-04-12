@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', false);
 const url =
-    `mongodb+srv://241605237:DeskX4@cluster0.hqwue.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+    `url`;
 
 mongoose.connect(url)
     .then(result => {
